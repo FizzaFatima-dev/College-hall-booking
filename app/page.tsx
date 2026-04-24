@@ -33,7 +33,7 @@ export default function Home() {
         setSource(result.source);
         setError(result.error ?? result.message ?? null);
         setStatus('loaded');
-      } catch (err) {
+      } catch {
         setError('Unable to load availability data.');
         setStatus('error');
       }
